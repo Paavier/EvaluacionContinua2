@@ -73,11 +73,11 @@ public class GestionPlayas {
      public void incluye(Playa playa){
           int posicion = posicion(playa);
           if(posicion == -1){
-               if(this.numPlayas == this.playas.length){
+               if(this.numPlayas == this.playas.length)
                     duplicarTamaño();
-                    this.playas[this.numPlayas] = playa;
-                    this.numPlayas++;
-               }
+               this.playas[this.numPlayas] = playa;
+               this.numPlayas++;
+          
           }else{
                this.playas[posicion] = playa;
           }
